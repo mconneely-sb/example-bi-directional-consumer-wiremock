@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  PACT_BROKER_BASE_URL: https://testdemo.pactflow.io
+  PACT_BROKER_BASE_URL: https://mconneely-sb.pactflow.io
   PACT_BROKER_TOKEN: ${{ secrets.PACTFLOW_TOKEN_FOR_CI_CD_WORKSHOP }}
   BASE_URL: http://localhost:5000
   GIT_COMMIT: ${{ github.sha }}
@@ -18,11 +18,11 @@ jobs:
       matrix:
         pact_provider:
           [
-            "pactflow-example-bi-directional-provider-dredd",
-            "pactflow-example-bi-directional-provider-restassured",
-            "pactflow-example-bi-directional-provider-postman",
+            #"pactflow-example-bi-directional-provider-dredd",
+            #"pactflow-example-bi-directional-provider-restassured",
+            #"pactflow-example-bi-directional-provider-postman",
             # "pactflow-example-provider",
-            # 'pactflow-example-bi-directional-provider-dotnet'
+            'pactflow-example-bi-directional-provider-dotnet'
           ]
     steps:
       - uses: actions/checkout@v2
