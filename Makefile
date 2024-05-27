@@ -53,6 +53,7 @@ can_i_deploy: .env
 	  --pacticipant ${PACTICIPANT} \
 	  --version ${GIT_COMMIT} \
 	  --to-environment production \
+	  --verbose \	
 	  --retry-while-unknown 6 \
 	  --retry-interval 10
 
