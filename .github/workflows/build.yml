@@ -22,7 +22,8 @@ jobs:
             # "pactflow-example-bi-directional-provider-restassured",
             # "pactflow-example-bi-directional-provider-postman",
             # "pactflow-example-provider",
-            # 'pactflow-example-bi-directional-provider-dotnet'
+            # 'pactflow-example-bi-directional-provider-dotnet',
+            pactflow-example-bi-directional-provider-readyapi
           ]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
